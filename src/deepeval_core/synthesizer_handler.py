@@ -12,9 +12,7 @@ class SynthesizerHandler:
     def generate_synthetic_goldens(self, document_paths):
         self.synthesizer.generate_goldens_from_docs(
             document_paths=document_paths,
-            include_expected_output=True,
-            max_goldens_per_context=4,
-            context_construction_config=ContextConstructionConfig(critic_model=self.model)
+            context_construction_config=ContextConstructionConfig(critic_model=self.model,chunk_size=300)
         )
         return self.synthesizer.synthetic_goldens
 

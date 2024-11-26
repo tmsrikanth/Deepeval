@@ -15,7 +15,7 @@ class TestCaseConverter:
         for golden in goldens:
             test_case = LLMTestCase(
                 input=golden.input,
-                actual_output=self.model.generate(golden.input,golden.context),
+                actual_output=self.model.generate(golden.input),
                 expected_output=golden.expected_output,
                 context=golden.context,
             )

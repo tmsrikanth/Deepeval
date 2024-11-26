@@ -7,6 +7,11 @@
 # BlueJ files
 *.ctxt
 
+# vscode files
+.vscode/
+#vector db
+.vector_db
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
