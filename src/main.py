@@ -11,10 +11,10 @@ from deepeval_core.metricmanger import MetricManager
 def main():
     # Initialize the AzureCustomModel with the correct parameters
     deepeval_model = AzureCustomModel(
-        openai_api_version="2023-07-01-preview",
-        azure_deployment="gpt-4o",
-        azure_endpoint="https://ai-proxy.lab.epam.com",
-        openai_api_key="a586c52eaf6b482b933f14bd9ed21b8d"
+        openai_api_version="<api version>",
+        azure_deployment="<deployments>",
+        azure_endpoint=<your llm endpoint>",
+        openai_api_key=<your api key>
     )
 
     # Initialize handlers
