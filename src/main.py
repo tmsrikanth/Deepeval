@@ -13,8 +13,8 @@ def main():
     deepeval_model = AzureCustomModel(
         openai_api_version="<api version>",
         azure_deployment="<deployments>",
-        azure_endpoint=<your llm endpoint>",
-        openai_api_key=<your api key>
+        azure_endpoint="<your llm endpoint>",
+        openai_api_key="<your api key>"
     )
 
     # Initialize handlers
